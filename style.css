@@ -112,7 +112,7 @@ html{
   .header .navbar{
     position: fixed;
     top: 0; right: -105%;
-    width: 30rem;
+    width: 25rem;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(50px);
     transition: .5s;
@@ -132,19 +132,30 @@ html{
     display: block;
     margin: 1rem 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .header .logo img{
+    height: 50px;
   }
   .home .content{
-    padding-top: 9.5rem;
+    margin-top: 2rem;
+    text-align: center;
   }
   .home .image img{
-    width: 368px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -3rem;
   } 
   .home .content .title{
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .home .content .description{
     font-size: 1.6rem;
+  }
+  .home .content .btn{
+    font-size: 14px;
+    padding: 8px 22px;
   }
 }
 
@@ -212,7 +223,29 @@ html{
 .abt-btn:hover {
   background-color: rgb(255, 213, 0);
 }
-
+@media (max-width:768px){
+  .about .abt-heading{
+    font-size: 18px;
+    padding: 25px 0 25px 0;
+  }
+  .about .abt-content {
+    width: 90%;
+    padding: 20px;
+  }
+  .about .abt-content h3{
+    font-size: 3rem;
+  }
+  .about .abt-content p{
+    font-size: 1.5rem;
+  }
+  .about .abt-btn{
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  .abt-image img{
+    width: 40%;
+  }
+}
 /*-----menu-----*/
 .heading{
   background-color: #ebb41d;
@@ -312,7 +345,43 @@ html{
 .btn:hover {
   background-color: rgb(255, 213, 0);
 }
-
+@media (max-width:768px){
+  .heading {
+    padding: 15px 0 15px 0;
+  }
+  .heading h1{
+    font-size: 1.6rem;
+  }
+  .heading h3 {
+    font-size: 1.9rem;
+  }
+  .menu {
+    justify-content: center;
+    grid-template-columns: repeat( auto-fit, minmax(250px,1fr));
+  }
+  .food-items{
+    margin: 0;
+  }
+  .details{
+    padding: 10px 10px;
+  }
+  .details button{
+    font-size: 14px;
+    width: 110px;
+    height: 35px;
+  }
+  .details-sub>h5{
+    font-size: 16px;
+  }
+  .details p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 8px 28px;
+  }
+}
 /*-----contact-----*/
 .contact-container {
   text-align: center;
@@ -364,4 +433,21 @@ html{
 .copyright p {
   font-size: 17px;
   font-weight: 300;
+}
+@media (max-width:768px){
+  .contact-container h1{
+    font-size: 20px;
+  }
+  .contact-container .contact-info p{
+    font-size: 14px;
+  }
+  .contact-container .links a{
+    font-size: 12px;
+  }
+  .social-icons a{
+    font-size: 18px;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
 }
